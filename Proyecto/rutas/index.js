@@ -1,12 +1,8 @@
-const express = require("express");
+const express = require('express');
+const controlador = require('../Controladores/homeController.js');
 const router = express.Router();
 
-const homeController = require("../Controladores/homeController");
+router.get('/', controlador.getHome);
 
-router.post('/ruta', (req, res) => {
-    // Lógica para manejar la solicitud POST
-    // Puede incluir la validación de datos, el almacenamiento en la base de datos, etc.
-    res.send('Solicitud POST recibida correctamente');
-});
 
 module.exports = router;

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Acerca de Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        
+</head>
+<body>
+    <!--Nav para todos-->
+    <%- include('parciales/navigation')%>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Acerca de Nosotros</h1>
+    </header>
+
+    <!-- Contenido del "Acerca de nosotros" -->
+    <section>
+        <h2>Nuestra Historia</h2>
+        <p>Somos una inmobiliaria con más de 10 años de experiencia en el mercado. Nuestra misión es ayudarte a encontrar la propiedad perfecta, ya sea una casa, departamento o terreno, que se ajuste a tus necesidades y presupuesto.</p>
+    </section>
+
+    <!-- Imagen ilustrativa -->
+    <section>
+        <img src="imagen-inmobiliaria.jpg" alt="Oficina de la Inmobiliaria">
+        <p>Nuestra oficina está ubicada en el corazón de la ciudad, y nuestro equipo de agentes altamente capacitados está listo para asistirte en cada paso del proceso de compra o venta de propiedades.</p>
+    </section>
+
+    <!-- Información de contacto -->
+    <section>
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o deseas obtener más información sobre nuestros servicios, no dudes en contactarnos:</p>
+        <p>Correo electrónico: info@inmobidik.com</p>
+        <p>Teléfono: (261) 456-7890</p>
+    </section>
+
+    <!-- Pie de página -->
+    <%- include('parciales/footer') %>
+</body>
+</html>

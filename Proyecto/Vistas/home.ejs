@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Inmobidik - Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <%- include('../Public/Style/homeView.ejs')%>
-</head>
-<body>
-  <%- include('parciales/navigationHome') %>  
-    <h1>Bobo</h1>
-  <%- include('parciales/footer') %>
-</body>
-</html>
 
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Inmobidik - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <%- include('../Public/Style/homeView.ejs')%>
+</head>
+
+<body>
+  <%- include('parciales/navigationHome') %>
+    <!-- Encabezado de la página -->
+    <header>
+      <h1>Bienvenido a Tu Inmobiliaria</h1>
+      <p>Tu destino para encontrar la propiedad de tus sueños</p>
+    </header>
+
+    <!-- Sección de búsqueda de propiedades -->
+    <section>
+      <h2>Encuentra la Propiedad Perfecta</h2>
+      <p>Utiliza nuestra herramienta de búsqueda para encontrar propiedades que se adapten a tus necesidades:</p>
+      <form action="buscar.php" method="get">
+        <label for="tipoPropiedad">Tipo de Propiedad:</label>
+        <select name="tipoPropiedad" id="tipoPropiedad">
+          <option value="casa">Casa</option>
+          <option value="departamento">Departamento</option>
+          <option value="terreno">Terreno</option>
+        </select>
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" name="ubicacion" id="ubicacion">
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- Sección de propiedades destacadas -->
+    <section>
+      <h2>Propiedades Destacadas</h2>
+      <div class="propiedad">
+        <img src="casa-destacada1.jpg" alt="Casa en venta">
+        <h3>Casa de Lujo en el Lago</h3>
+        <p>Amplia casa de 4 habitaciones con vista al lago.</p>
+        <p>Precio: $500,000</p>
+        <a href="detalle-propiedad1.html">Más información</a>
+      </div>
+      <div class="propiedad">
+        <img src="departamento-destacado1.jpg" alt="Departamento en venta">
+        <h3>Departamento Moderno en el Centro</h3>
+        <p>Acogedor departamento de 2 habitaciones en el centro de la ciudad.</p>
+        <p>Precio: $250,000</p>
+        <a href="detalle-propiedad2.html">Más información</a>
+      </div>
+    </section>
+
+    <%- include('parciales/footer') %>
+</body>
+
+</html>

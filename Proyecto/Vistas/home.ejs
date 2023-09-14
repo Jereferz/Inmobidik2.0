@@ -10,7 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <%- include('../Public/Style/homeView.ejs')%>
+  <%- include('../Public/Style/efectoWave.ejs')%>
+    <%- include('../Public/Style/homeView.ejs')%>
 </head>
 
 <body>
@@ -20,42 +21,65 @@
       <h1>Bienvenido a Tu Inmobiliaria</h1>
       <p>Tu destino para encontrar la propiedad de tus sueños</p>
     </header>
+    <!-- Wave -->
+    <div class="bg_color"></div>
+    <div class="wave w1"></div>
+    <!-- Fin Wave -->
 
     <!-- Sección de búsqueda de propiedades -->
     <section>
       <h2>Encuentra la Propiedad Perfecta</h2>
       <p>Utiliza nuestra herramienta de búsqueda para encontrar propiedades que se adapten a tus necesidades:</p>
-      <form action="buscar.php" method="get">
-        <label for="tipoPropiedad">Tipo de Propiedad:</label>
-        <select name="tipoPropiedad" id="tipoPropiedad">
-          <option value="casa">Casa</option>
-          <option value="departamento">Departamento</option>
-          <option value="terreno">Terreno</option>
-        </select>
-        <label for="ubicacion">Ubicación:</label>
-        <input type="text" name="ubicacion" id="ubicacion">
-        <button type="submit">Buscar</button>
+
+      <!-- <input type="text" name="ubicacion" id="ubicacion">
+        <button type="submit">Buscar</button> -->
       </form>
     </section>
 
+    <div>
+      <div class="div1">
+        <select class="selectHome" aria-label="Disabled select example">
+          <option selected>¿Que desea hacer?</option>
+          <option value="1">Venta</option>
+          <option value="2">Alquilar</option>
+        </select>
+      </div>
+      <div class="div2"><select class="selectHome" aria-label="Disabled select example">
+          <option selected>Departamentos</option>
+          <option value="1">Casas</option>
+          <option value="2">Lotes</option>
+          <option value="3">Locales</option>
+          <option value="4">Fincas</option>
+        </select>
+      </div>
+      <div class="div3"><select class="selectHome" aria-label="Disabled select example">
+          <option selected>¿Localidad?</option>
+          <option value="1">Venta</option>
+          <option value="2">Alquilar</option>
+        </select>
+      </div>
+  
+    </div>
+    
+
     <!-- Sección de propiedades destacadas -->
-    <section>
+    <!-- <section class="centrado">
       <h2>Propiedades Destacadas</h2>
       <div class="propiedad">
-        <img src="casa-destacada1.jpg" alt="Casa en venta">
+        <img class="imagenesPer" src="https://images.unsplash.com/photo-1570127828934-c60aa3e1e5af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Casa en venta">
         <h3>Casa de Lujo en el Lago</h3>
         <p>Amplia casa de 4 habitaciones con vista al lago.</p>
         <p>Precio: $500,000</p>
-        <a href="detalle-propiedad1.html">Más información</a>
+        <a href="#">Más información</a>
       </div>
       <div class="propiedad">
-        <img src="departamento-destacado1.jpg" alt="Departamento en venta">
+        <img class="imagenesPer" src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Departamento en venta">
         <h3>Departamento Moderno en el Centro</h3>
         <p>Acogedor departamento de 2 habitaciones en el centro de la ciudad.</p>
         <p>Precio: $250,000</p>
-        <a href="detalle-propiedad2.html">Más información</a>
+        <a href="#">Más información</a>
       </div>
-    </section>
+    </section> -->
 
     <%- include('parciales/footer') %>
 </body>

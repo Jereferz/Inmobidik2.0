@@ -1,0 +1,35 @@
+<style>
+    .bg_color{
+        width: 100%;
+        height: 70%;
+        background-color: #2196f3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .wave{
+        width: 300%;
+        height: 100%;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        background-image: url(https://raw.githubusercontent.com/Magtimus/fondo-ondulado-con-puro-css-para-seguir-tutorial/d92cdee848238d38e199a97d701f6f9a478588f8/images/wd1.svg);
+        z-index: -1;
+
+    }
+    .w1{
+        animation: w1 7s linear infinite;
+        z-index: -1;
+    }
+
+    @keyframes w1 {
+        0%{
+            margin-left: 0;
+        }
+        100%{
+            margin-left: -1600px;
+        }
+    }
+</style>

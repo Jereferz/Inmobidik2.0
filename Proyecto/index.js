@@ -1,7 +1,8 @@
 const express = require("express");
 require('dotenv').config();
 const morgan = require('morgan');
-const route = require('./rutas/vistas.js');
+const routeVistas = require('./rutas/vistasRutas.js');
+const routeControllers = require('./rutas/controladoresRutas.js')
 const path = require('path');
 
 // const  conn = require("express-myconnection");
@@ -18,7 +19,8 @@ const PORT = process.env.PORT || 3001;
 app.set('views', path.join(__dirname,'Vistas'));
 app.set('view engine', 'ejs');
 
-app.use(route);
+app.use(routeVistas);
+app.use(routeControllers);
 
 app.listen(PORT, () =>{
     console.log(`escuchando puerto ${PORT}`);

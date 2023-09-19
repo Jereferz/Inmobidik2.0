@@ -1,7 +1,5 @@
-const db = require('../db.js')
-//const users = require('../Vistas/users.html')
 
+const modelo = require("../Modelos/usuarios");
 
-
-module.exports.getHome = (req, res) => res.send('hola');
+//module.exports.getHome = (req, res) => res.send('hola');
 

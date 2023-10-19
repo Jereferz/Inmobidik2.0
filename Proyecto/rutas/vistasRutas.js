@@ -13,6 +13,8 @@ router.get('/login', (req, res) => res.render('login'));
 router.get('/about', (req, res) => res.render('about'));
 router.get('/alquilerDepartamento', (req,res) => res.render('alquilerDepartamento'));
 
+router.get('/login', (req, res) => res.render('login'));
+
 //router.get('/', (req, res) => res.render('usuarios'));
 
 

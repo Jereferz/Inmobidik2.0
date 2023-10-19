@@ -1,2 +1,4 @@
 node_modules
 Bibliotecas.txt
+package-lock.json
+db.js

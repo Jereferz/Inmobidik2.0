@@ -11,7 +11,7 @@ router.get('/home', (req, res) => res.render('home'));
 router.get('/login', (req, res) => res.render('login'));
 
 router.get('/about', (req, res) => res.render('about'));
-router.get('/seccion', (req,res) => res.render('seccion'));
+router.get('/alquilerDepartamento', (req,res) => res.render('alquilerDepartamento'));
 
 //router.get('/', (req, res) => res.render('usuarios'));
 

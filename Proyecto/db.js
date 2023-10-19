@@ -4,7 +4,7 @@ var mysql = require("mysql");
 var conexion = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: 'root',
     port: '3306',
     database: 'inmobidik'
 });

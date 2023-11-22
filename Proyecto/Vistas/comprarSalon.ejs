@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobidik</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/2160/2160136.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <%- include('../public/style/alquilerCompra') %>
+    <%- include('../public/style/homeView') %>
+    <style>
+      body{
+        background-color: rgb(163, 136, 141);
+      }
+       
+    </style>
+  </head>
+<body>
+
+  <header>
+   
+    <%- include('parciales/navigation') %>  
+    
+  </header>
+
+  <br>
+  <div class="container">
+    <center><h1>Comprar Salon</h1></center>
+  </div>
+  <br>
+  <div class="container-fluid row">
+    <div id="div_aside" class="col-md-3">
+      <aside class="sticky-aside">
+        <%- include('parciales/aside_Alquiler') %>
+      </aside>
+    </div>
+    <div class="col-md-9">
+      <section>
+        <%- include('parciales/targets_comprarSalon') %>
+      </section>
+    </div>
+  </div>
+
+  <div id="miModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Filtros</h4>
+                <button id="cerrarModalBtn" type="button" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <br>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Ambientes</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">+5</option>
+              </select>
+              <br>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Baños</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">+5</option>
+              </select>
+              <br>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Dormitorios</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">+5</option>
+              </select>
+              <br>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Garage</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">+5</option>
+              </select>
+              <br>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Ubicacion</option>
+                <option value="Capital">Capital</option>
+                <option value="GC">Godoy Cruz</option>
+                <option value="Guaymallén">Guaymallén</option>
+                <option value="LH">Las Heras</option>
+                <option value="Maipu">Maipu</option>
+                <option value="Lujan">Lujan</option>
+                <option value="Lavalle">Lavalle</option>
+                <option value="Junin">Junin</option>
+                <option value="SM">San Martin</option>
+                <option value="Rivadavia">Rivadavia</option>
+                <option value="SR">Santa Rosa</option>
+                <option value="LP">La Paz</option>
+                <option value="Tunuyan">Tunuyan</option>
+                <option value="Tupungato">Tupungato</option>
+                <option value="SC">San Carlos</option>
+                <option value="GA">General Alvear</option>
+                <option value="SR">San Rafael</option>
+                <option value="Malargue">Malargüe</option>
+              </select>
+              <br>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Años de Construccion</option>
+                <option value="5">Menos de 5 años</option>
+                <option value="5a10">5 a 10 años</option>
+                <option value="10a20">10 a 20 años</option>
+                <option value="20a50">20 a 50 años</option>
+                <option value="+50">Mas de 50 años</option>
+              </select>
+            </div>
+            <div class="modal-footer">
+                <button onclick="redirigirAHtml()" type="button" class="btn btn-primary" data-dismiss="modal">Aplicar Filtros</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <%- include('parciales/footer') %>  
+    <!-- <footer class="container">
+      
+    </footer> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+  <script>
+    $(document).ready(function(){
+        $("#abrirModalBtn").click(function(){
+            $("#miModal").modal('show');
+        });
+    });
+    
+    $("#cerrarModalBtn").click(function () {
+            $("#miModal").modal('hide');
+        });
+
+    function redirigirAHtml() {
+        window.location.href = '/home'; 
+    }
+
+    // Formato Numeros Inputs
+
+    function formatoMiles(input) {
+      let valorSinSeparadores = input.value.replace(/[^\d]/g, ''); // Elimina cualquier caracter que no sea un dígito
+      let valorNumerico = Number(valorSinSeparadores);
+      
+      // Formatear el número con un punto separador cada tres dígitos
+      let formatoNumerico = formatearConPuntos(valorNumerico);
+
+      input.value = formatoNumerico;
+    }
+
+    function formatearConPuntos(numero) {
+      return numero.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    }
+  </script>
+</body>
+</html>

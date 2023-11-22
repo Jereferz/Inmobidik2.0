@@ -19,7 +19,7 @@
   <%- include('parciales/navigation') %>
     <!-- Encabezado de la página -->
     <header>
-      <h1>Bienvenido a Tu Inmobiliaria</h1>
+      <h1>Bienvenido a Inmobidik</h1>
       <p>Tu destino para encontrar la propiedad de tus sueños</p>
     </header>
     <!-- Wave -->
@@ -28,22 +28,22 @@
     <!-- Fin Wave -->
 
     <!-- Sección de búsqueda de propiedades -->
-    <section>
+    <section class ="subtitulo">
       <h2>Encuentra la Propiedad Perfecta</h2>
-      <p>Utiliza nuestra herramienta de búsqueda para encontrar propiedades que se adapten a tus necesidades:</p>
+      <p>Encuentra propiedades que se adapten a tus necesidades:</p>
 
       <!-- <input type="text" name="ubicacion" id="ubicacion">
         <button type="submit">Buscar</button> -->
-      </form>
     </section>
-    <div class="select-container ">
+    <div class="select-container content">
       <select class="select-box" >
         <option selected>¿Que desea hacer?</option>
-        <option value="1">Venta</option>
+        <option value="1">Vender</option>
         <option value="2">Alquilar</option>
+        <option value="3">Comprar</option>
       </select>
       <select class="select-box" aria-label="Disabled select example">
-        <option selected>Departamentos</option>
+        <option selected>¿Que inmueble?</option>
         <option value="1">Casas</option>
         <option value="2">Lotes</option>
         <option value="3">Locales</option>
@@ -51,12 +51,42 @@
       </select>
       <select class="select-box" aria-label="Disabled select example">
         <option selected>¿Localidad?</option>
-        <option value="1">Venta</option>
-        <option value="2">Alquilar</option>
+        <option value="1">Guaymallén</option>
+        <option value="2">Mendoza Capital</option>
+        <option value="3">Godoy Cruz</option>
+        <option value="4">Luján de Cuyo</option>
+        <option value="6">Maipú</option>
+        <option value="7">San Rafael</option>
+        <option value="8">Las Heras</option>
+        <option value="9">Chacras de Coria</option>
+        <option value="10">San Martín</option>
+        <option value="11">Tunuyán</option>
+        <option value="12">Lavalle</option>
+        <option value="13">Vistalba</option>
       </select>
+      <button class="BotonBuscar"> Buscar
+      </button>
     </div>
+    
+    <div id="carouselExampleSlidesOnly" class="carousel slide slider" data-bs-ride="carousel">
+      
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <img src="https://images.unsplash.com/photo-1594734439445-f7d8eb97037d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 " alt="...">
+        </div>
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1595483921906-7da233885832?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1430285561322-7808604715df?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1606995797128-f14378256876?q=80&w=1496&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    
 
-    <img src="https://drive.google.com/file/d/1q8KzQoS9ylpQGLtBOrcYZ82qtPmocQMn/view?usp=drive_link" alt="">
 
     <!-- Sección de propiedades destacadas -->
     <!-- <section class="centrado">

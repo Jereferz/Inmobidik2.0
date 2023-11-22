@@ -1,5 +1,4 @@
 <style>
-    
     .formHome {
         text-align: center;
     }
@@ -27,7 +26,7 @@
         text-align: center;
         border: none;
         outline: none;
-        width: 200px;
+        width: 170px;
         /* Ancho de cada select */
         padding: 5px;
         /* Espacio interno */
@@ -36,7 +35,7 @@
     }
 
     body {
-        Font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+        font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
         /*background-image: url('https://images.unsplash.com/photo-1548588627-f978862b85e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
         background-size: cover;
         /* Ajusta la imagen para cubrir todo el fondo */
@@ -51,14 +50,42 @@
         /* Centra el contenido del encabezado */
 
         overflow-x: hidden;
-
     }
+
+    /*------------------texto-----------------------------*/
+    /* Texto con fondo borroso transparente */
+    .subtitulo {
+        background-color: rgba(255,
+                255,
+                255,
+                0.7);
+        /* Color de fondo blanco con 0.7 de opacidad */
+        padding: 20px;
+        backdrop-filter: blur(1px);
+        /* Efecto de desenfoque */
+        border-radius: 10px;
+        /* Bordes redondeados para suavizar la apariencia */
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    /*------------------header-----------------------------*/
+    header {
+        text-align: center;
+    }
+
+    .subtitulo {
+        text-align: center;
+    }
+
     /*-----------------------------------------------*/
     nav ul {
         list-style: none;
-        overflow: hidden; 
+        overflow: hidden;
     }
-
 
     /*-----------------------------------------------*/
 
@@ -89,6 +116,33 @@
     .boton:active {
         transform: translateY(-1px);
     }
+    /*--------------------*/
+    .BotonBuscar {
+        font-size: 13px;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        will-change: box-shadow, transform;
+        background: radial-gradient(100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100%);
+        box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+        padding: 0 2em;
+        border-radius: 0.3em;
+        color: #000000;
+        height: 2.2em;
+        text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+    }
+
+    .BotonBuscar:hover {
+        box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+        transform: translateY(-0.1em);
+    }
+
+    .BotonBuscar:active {
+        box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+        transform: translateY(0em);
+    }
 
     /*--------------------*/
     /*barra de navigation*/
@@ -99,10 +153,42 @@
         padding: 10px;
         /* Agrega un relleno (padding) para separar el contenido del fondo */
     }
+
     /*--------------------*/
     /*icono*/
     #miImagen {
-    width: 35px; /* Establece el ancho deseado en píxeles */
-    height: 35px; /* Establece la altura deseada en píxeles */
-}
+        width: 35px;
+        /* Establece el ancho deseado en píxeles */
+        height: 35px;
+        /* Establece la altura deseada en píxeles */
+    }
+
+    /*--------------------*/
+    /*Slider*/
+    /* Estilos generales */
+
+    /* Estilos del slider */
+    .slider {
+        position: absolute;
+        margin-top: 12%;
+        margin-left: 24%;
+        top: 0;
+        width: 50%;
+        height: 1000%;
+        z-index: -1;
+        /* Coloca el slider en el fondo */
+        /* Otros estilos del slider (por ejemplo, background-image, transiciones, etc.) */
+    }
+
+    /* Estilos del contenido que aparecerá encima del slider */
+    .content {
+        position: relative;
+        margin-top: 8%;
+        z-index: 10;
+        /* Coloca el contenido encima del slider */
+        text-align: center;
+        padding: 30px;
+        color: #fff;
+        /* Cambia el color del texto según el fondo del slider */
+    }
 </style>

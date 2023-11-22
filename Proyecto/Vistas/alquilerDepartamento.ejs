@@ -10,20 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <%- include('../public/style/alquilerCompra') %>
-    <%- include('../public/style/homeView') %>
-    <style>
-      body{
-        background-color: rgb(163, 136, 141);
-      }
-       
-    </style>
+    <%- include('../Public/Style/homeView.ejs')%>
   </head>
 <body>
-
+  <%- include('parciales/navigation') %>  
   <header>
-   
-    <%- include('parciales/navigation') %>  
-    
+    <div class="container">
+      <%- include('parciales/navigation') %>  
+    </div>
   </header>
   <br>
   <div class="container">

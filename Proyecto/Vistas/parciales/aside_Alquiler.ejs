@@ -1,59 +1,54 @@
-<nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
-    <h5>Tipo de Propiedad</h5>
-    <select name="propiedad" id="propiedad">
-      <!-- <option selected>Inmueble</option>  -->
-      <option value="departamento">Departamento</option>
-      <option value="casa">Casa</option>
-      <option value="salon">Salon</option>
-    </select>
-    
-    <br>
-    <div>
-      <h5>Habitaciones</h5>
-      <div class="list-group">
-        <select name="habitaciones" id="habitaciones">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-      </div>
+<!--nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">-->
+<br>
+  <div class="container-fluid">
+    <div  class="list-group">
+      <center><h5>Tipo de Propiedad</h5></center>
+      <select class="list-group-item" name="propiedad" id="propiedad">
+        <option value="departamento">Departamento</option>
+        <option value="casa">Casa</option>
+        <option value="salon">Salon</option>
+      </select>
     </div>
-    <br>
-    <div>
-      <h5>Precio</h5>
-   
-      <div class="container">
-        
-        <ul >
-            <li><select name="moneda" id="moneda">
-              <option value="peso">ARS</option>
-              <option value="dolar">USD</option>
-            </select></li>
-            <label for="desde">Desde</label>
-            <li><input id="desde" type="text"></li>
-            <label for="hasta">Hasta</label>
-            <li><input id="hasta" type="number"></li>
-        </ul>
-      </div>
+  </div>
+
+  <br>
+  <div class="container-fluid">
+    <center><h5>Habitaciones</h5></center>
+    <div class="list-group">
+      <select class="list-group-item" name="habitaciones" id="habitaciones">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
     </div>
+  </div>
+  <br>
+  <div>
+    <center><h5>Precio</h5></center>
+  
+    <div class="container">
+      
+      <ul class="list-group custom-list">
+        <label for="moneda">Moneda</label>
+        <li class="list-group-item custom-list-item"><select name="moneda" id="moneda">
+          <option value="peso">ARS</option>
+          <option value="dolar">USD</option>
+        </select></li>
+        <label for="desde">Desde</label>
+        <li class="list-group-item custom-list-item"><input id="desde" type="text"></li>
+        <label for="hasta">Hasta</label>
+        <li class="list-group-item custom-list-item"><input id="hasta" type="number"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <br>
+    <center>
+        <button id="abrirModalBtn" class="boton">
+            <i class="bi bi-funnel-fill"></i> Mas Filtros
+        </button>
+    </center>
+  </div>
 
-    <!-- <div class="container mt-4">
-      <div class="form-group">
-          <label for="rango">Desde:</label>
-          <input type="range" class="form-range" id="rangoDesde" min="1000" max="50000" step="1000" value="25000">
-      </div>
-
-      <div class="form-group">
-          <p> <span id="valorRangoDesde">25000</span></p>
-      </div>
-      <div class="form-group">
-        <label for="rango">Hasta:</label>
-        <input type="range" class="form-range" id="rangoHasta" min="50000" max="100000000" step="1000000" value="5000000">
-      </div>
-
-      <div class="form-group">
-        <p> <span id="valorRangoHasta">5000000</span></p>
-      </div>
-    </div> -->
-  </nav>
+  

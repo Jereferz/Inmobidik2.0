@@ -15,6 +15,7 @@ router.get('/alquilerDepartamento', (req,res) => res.render('alquilerDepartament
 
 router.get('/login', (req, res) => res.render('login'));
 router.get('/register', (req, res) => res.render('register'));
+router.get('/comprarDepto', (req,res) => res.render('comprarDepto'));
 
 //router.get('/', (req, res) => res.render('usuarios'));
 

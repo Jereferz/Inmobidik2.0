@@ -1,4 +1,15 @@
 <style>
+  
+body {
+      font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;  
+      background: #2196f3;
+      padding: 20px;
+    }
+
+.custom-list-item {
+  list-style-type: none;
+}  
+
 
 .container-fluid.row {
     display: flex;
@@ -13,9 +24,29 @@
 ul, ol {
     list-style: none;
 }
+.card-body{
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde delgardo */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #bfddf7;  /*Color de fondo */
+  color: black; /* Color del texto */
+  font-size: 16px; /* Tamaño de fuente */
 
+
+}
 #abrirModalBtn {
             font-size: 12px; /* Aumentar el tamaño de la fuente del botón */
+            padding: 15px 30px; /* Aumentar el espaciado interno para hacer el botón más grande */
+            border-radius: 10px; /* Bordes redondeados */
+            background-color: #8090a1; /* Color de fondo personalizado */
+            color: white; /* Color del texto */
+            font-weight: bold; /* Texto en negrita */
+            border: none; /* Quitar el borde */
+}
+
+#aplicarFiltros{
+  font-size: 12px; /* Aumentar el tamaño de la fuente del botón */
             padding: 15px 30px; /* Aumentar el espaciado interno para hacer el botón más grande */
             border-radius: 10px; /* Bordes redondeados */
             background-color: #8090a1; /* Color de fondo personalizado */
@@ -42,8 +73,59 @@ ul, ol {
   padding: 5px; /* Espaciado interno de las opciones */
 }
 
+.list-group li{
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde delgardo */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #8090a1; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 16px;
+}
+
+.nuevo li{
+  /*width: 100%;  Ancho completo del contenedor */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde delgardo */
+  /*border-radius: 5px;  Bordes redondeados */
+  background-color: #fcfdfd; /* Color de fondo */
+  color: black; /* Color del texto */
+  font-size: 16px;
+}
+
 #div_aside {
   background-color: #f5f6f8be; /* Cambia #ff0000 al color que desees */
 }
+
+.btn {
+  padding: 1.3em 3em;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #000;
+        background-color: #0ba577;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+}
+
+.card {
+      width: 100%;
+      transition: transform 0.3s ease; /* Agregamos una transición suave */
+    }
+
+    .card:hover {
+      transform: scale(1.05); /* Aumentamos el tamaño en un 5% cuando el cursor pasa por encima */
+    }
+    .card-title {
+      font-weight: bold; /* Hace que el texto esté en negrita */
+    }
+    
+
 
 </style>

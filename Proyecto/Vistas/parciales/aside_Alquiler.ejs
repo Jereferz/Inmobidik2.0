@@ -24,31 +24,49 @@
     </div>
   </div>
   <br>
-  <div>
+  <div class="container-fluid">
     <center><h5>Precio</h5></center>
   
-    <div class="container">
+    <div class="list-group">
+      <label for="moneda">Moneda</label>
+      <select class="list-group-item" name="moneda" id="moneda">
+        <option value="peso">ARS</option>
+        <option value="dolar">USD</option>
+      </select>
+      <ul class="list-group">
+        <label for="desde">Desde</label>
+        <li class="list-group-item "><input id="desde" type="text" oninput="formatoMiles(this)"></li>
+        <label for="hasta">Hasta</label>
+        <li class="list-group-item "><input id="hasta" type="text" oninput="formatoMiles(this)"></li>
+      </ul>
       
-      <ul class="list-group custom-list">
+     <!--  <ul class="list-group custom-list">
         <label for="moneda">Moneda</label>
         <li class="list-group-item custom-list-item"><select name="moneda" id="moneda">
           <option value="peso">ARS</option>
           <option value="dolar">USD</option>
         </select></li>
         <label for="desde">Desde</label>
-        <li class="list-group-item custom-list-item"><input id="desde" type="text"></li>
+        <li class="list-group-item custom-list-item"><input id="desde" type="text" oninput="formatoMiles(this)"></li>
         <label for="hasta">Hasta</label>
-        <li class="list-group-item custom-list-item"><input id="hasta" type="number"></li>
-      </ul>
+        <li class="list-group-item custom-list-item"><input id="hasta" type="text" oninput="formatoMiles(this)"></li>
+      </ul> -->
     </div>
   </div>
   <div class="container-fluid">
     <br>
     <center>
+      <button id="aplicarFiltros" class="boton">
+          <i class="bi bi-funnel-fill"></i> Aplicar Filtros
+      </button>
+  </center>
+  <br>
+    <center>
         <button id="abrirModalBtn" class="boton">
-            <i class="bi bi-funnel-fill"></i> Mas Filtros
+          <i class="bi bi-pen-fill"></i> Mas Filtros
         </button>
     </center>
+    <br><br><br>
   </div>
 
   
